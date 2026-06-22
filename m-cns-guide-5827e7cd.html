@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mk体育｜简明指南 · 便捷访问</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #f7f5f1;
+      font-family: 'Georgia', 'Times New Roman', '宋体', 'SimSun', serif;
+      color: #2c2b28;
+      line-height: 1.7;
+      padding: 0 1.2rem;
+    }
+    .page {
+      max-width: 820px;
+      margin: 2rem auto;
+      background: #fffcf8;
+      padding: 2.5rem 2.2rem 3rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+      border-radius: 4px;
+    }
+
+    /* 首页横幅 */
+    .hero {
+      background: #ece8e0;
+      padding: 2.8rem 2rem 2.5rem;
+      margin: -2.5rem -2.2rem 2.5rem;
+      border-radius: 4px 4px 0 0;
+      text-align: center;
+      border-bottom: 1px solid #d9d4cb;
+      position: relative;
+    }
+    .hero::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: #a4937a;
+      margin: 1.4rem auto 0;
+      border-radius: 2px;
+    }
+    .hero h1 {
+      font-size: 2.4rem;
+      font-weight: 400;
+      letter-spacing: 2px;
+      color: #3a352e;
+    }
+    .hero p {
+      font-size: 1.05rem;
+      color: #5f5a50;
+      margin-top: 0.75rem;
+      font-style: italic;
+    }
+
+    /* 正文排版 */
+    section {
+      margin-top: 2.2rem;
+    }
+    h2 {
+      font-size: 1.45rem;
+      font-weight: 400;
+      color: #363027;
+      border-left: 4px solid #b8aa94;
+      padding-left: 1rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      margin-bottom: 1.2rem;
+      text-align: justify;
+      word-break: break-word;
+    }
+
+    /* 引用 / 提示框 */
+    .inset-tip {
+      background: #f3efe7;
+      border-left: 6px solid #8f7e66;
+      padding: 1.2rem 1.5rem;
+      margin: 1.6rem 0;
+      border-radius: 2px 6px 6px 2px;
+      font-size: 0.96rem;
+    }
+    .inset-tip strong {
+      color: #4b4235;
+      font-weight: 600;
+    }
+
+    .faq-mini {
+      background: #faf8f3;
+      padding: 1.2rem 1.5rem;
+      border-radius: 6px;
+      border: 1px solid #e2dbcf;
+      margin: 2rem 0 1.6rem;
+    }
+    .faq-mini dt {
+      font-weight: 600;
+      color: #3f392f;
+      margin-top: 0.8rem;
+    }
+    .faq-mini dt:first-child {
+      margin-top: 0;
+    }
+    .faq-mini dd {
+      margin-left: 0.8rem;
+      margin-bottom: 0.5rem;
+      color: #4a443b;
+      font-size: 0.95rem;
+    }
+    .faq-mini .tag {
+      display: inline-block;
+      background: #d6cdbe;
+      padding: 0.1rem 0.7rem;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      color: #2b261f;
+      margin-right: 6px;
+    }
+
+    /* 页尾访问提示 */
+    .footer-note {
+      margin-top: 2.8rem;
+      padding-top: 1.8rem;
+      border-top: 1px solid #ddd6ca;
+      text-align: center;
+      font-size: 0.98rem;
+      color: #5b5549;
+    }
+    .footer-note a {
+      color: #63563f;
+      text-decoration: none;
+      border-bottom: 1px dotted #a3927a;
+      font-weight: 500;
+      transition: border 0.2s, color 0.2s;
+    }
+    .footer-note a:hover {
+      color: #3d3324;
+      border-bottom: 1px solid #3d3324;
+    }
+
+    /* 响应式细节 */
+    @media (max-width: 600px) {
+      body {
+        padding: 0 0.6rem;
+      }
+      .page {
+        padding: 1.5rem 1rem 2rem;
+        margin: 1rem auto;
+      }
+      .hero {
+        padding: 2rem 1.2rem 1.8rem;
+        margin: -1.5rem -1rem 2rem;
+      }
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+      h2 {
+        font-size: 1.25rem;
+      }
+      .inset-tip {
+        padding: 1rem;
+      }
+      .faq-mini {
+        padding: 1rem;
+      }
+    }
+    @media (max-width: 400px) {
+      .hero h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- 首页横幅 -->
+  <div class="hero">
+    <h1>mk体育 · 向导手记</h1>
+    <p>一份简明指南，陪你更顺畅地走进体育世界</p>
+  </div>
+
+  <!-- 背景说明 -->
+  <section>
+    <h2>初衷与场景</h2>
+    <p>无论你是日常关注赛事资讯，还是偶尔想了解一下运动动态，一个清晰、稳定的访问路径总能节省不少精力。mk体育 聚集了多类体育内容——从绿茵场上的对抗到篮球馆里的攻防，从网拍决胜到泳池竞速，信息流庞杂。这份简短的手记，正是为那些希望高效找到核心内容的朋友准备的。</p>
+    <p>很多人都有过类似体验：打开浏览器，输入关键词，结果在广告和跳转中绕来绕去。与其浪费时间，不如提前熟悉一个直接且可靠的站点。以下内容将从访问指引、内容轮廓以及常见疑问三个角度，帮你快速上手。</p>
+  </section>
+
+  <!-- 三段自然介绍：特点 + 场景 + 使用建议 -->
+  <section>
+    <h2>内容轮廓 · 特点速览</h2>
+    <p>mk体育 的版块设计侧重于实时比分、赛事预告以及深度资讯。页面结构相对简洁，导航按运动类别分区，即使第一次访问也能较快定位。对于资深爱好者，这里还保留了部分历史数据和回放链接，方便复盘。值得一提的是，移动端适配做得比较均衡，通勤路上刷一刷也不吃力。</p>
+
+    <div class="inset-tip">
+      <strong>💡 一点提醒：</strong> 初次访问时，建议先看看首页的「热门赛事」区域，那里通常更新最快。如果目标明确，直接使用站内搜索会更高效。
+    </div>
+
+    <h2>适用场景举例</h2>
+    <p>周末想看英超或欧冠的即时战报？午休时想了解 NBA 季后赛对阵？又或是想找某场 F1 排位赛的回顾？在这些日常场景里，一个聚合度高的体育站点能省下切换多个 App 的麻烦。mk体育 的好处在于：它把不同联赛、不同时区的信息放在同一屋檐下，减少了信息碎片化带来的焦虑。</p>
+
+    <h2>使用建议与节奏</h2>
+    <p>不必一次性把所有栏目翻个遍。体育内容具有很强的时效性，每天花上三五分钟浏览一下头部新闻或赛果，就能保持基本同步。遇到感兴趣的长文，可以收藏下来慢慢读。记住，工具是为人服务的，别让信息流反过来拖累你的注意力。</p>
+  </section>
+
+  <!-- FAQ 摘要 (非完整FAQ，只取最相关的一两个) -->
+  <dl class="faq-mini">
+    <dt><span class="tag">常问</span> 访问 mk体育 需要特殊设置吗？</dt>
+    <dd>不需要。直接打开网址即可，大部分网络环境都能正常加载。如果遇到加载缓慢，可以先检查本地网络，或者稍后再试——高峰期偶尔会有短暂排队。</dd>
+    <dt><span class="tag">常问</span> 内容更新频率如何？</dt>
+    <dd>赛事密集期基本实时更新，常规时段每日会有多次刷新。你可以把主页设为书签，随时回来看一眼。</dd>
+  </dl>
+
+  <!-- 页尾访问提示 -->
+  <div class="footer-note">
+    <p>如果你正在寻找一个顺手且内容扎实的体育信息站，不妨试试 <a href="https://m-cns-mksport.com">mk体育</a>。从这里开始，不必绕路。</p>
+    <p style="font-size: 0.85rem; color: #8a7f70; margin-top: 1rem;">— 翻过这一页，球场见 —</p>
+  </div>
+
+</div>
+</body>
+</html>
